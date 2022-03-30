@@ -45,7 +45,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-<!------------------------------------------------------------------------------>
+## ---------- Notes -------------
 
 C:\Users\harak\Documents\ProgWorkshop\MERN>npx create-react-app <project-name> --template typescript
 
@@ -63,7 +63,7 @@ $ npm install react-icons
 $ npm i react-beautiful-dnd
 $ npm i @types/react-beautiful-dnd
 
-## ****\*\*\*\***** TODO ******\*\*\*******
+## \***\*\*\*\*\*\*\*** TODO **\*\***\*\*\***\*\***
 
 1. fix todo under lapping Completed Task container
 2. Save and restore in localStorage
