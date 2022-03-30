@@ -47,6 +47,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## ---------- Notes -------------
 
+RoadsideCoder
+<href="https://www.youtube.com/watch?v=uEVHJf30bWI&list=PLKhlp2qtUcSbZaGj7DGyZ7BLupZEZOkAw&index=3">
+
 C:\Users\harak\Documents\ProgWorkshop\MERN>npx create-react-app <project-name> --template typescript
 
 ? makes the params of an object optional
