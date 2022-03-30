@@ -53,7 +53,7 @@ C:\Users\harak\Documents\ProgWorkshop\MERN>npx create-react-app <project-name> -
 
 Union, <type | different-type>
 
-Function type, printName: (name: string) => void; // returns undefined
+Function type, printName: (name: string) => void; // returns undefined <br />
 Function type, printName: (name: string) => never; // returns unknown
 
 interface Object {key: value arguments};
@@ -65,6 +65,6 @@ $ npm i @types/react-beautiful-dnd
 
 ## \***\*\*\*\*\*\*\*** TODO **\*\***\*\*\***\*\***
 
-1. fix todo under lapping Completed Task container
+1. Fix todo under lapping Completed Task container
 2. Save and restore in localStorage
 3. Make image properly responsive
