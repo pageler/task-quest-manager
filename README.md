@@ -47,10 +47,12 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## ---------- Notes -------------
 
-RoadsideCoder
-<href="https://www.youtube.com/watch?v=uEVHJf30bWI&list=PLKhlp2qtUcSbZaGj7DGyZ7BLupZEZOkAw&index=3">
+-   RoadsideCoder
+    <href="https://www.youtube.com/watch?v=uEVHJf30bWI&list=PLKhlp2qtUcSbZaGj7DGyZ7BLupZEZOkAw&index=3">
 
 C:\Users\harak\Documents\ProgWorkshop\MERN>npx create-react-app <project-name> --template typescript
+
+-   Typescript basics
 
 ? makes the params of an object optional
 
@@ -59,15 +61,75 @@ Union, <type | different-type>
 Function type, printName: (name: string) => void; // returns undefined <br />
 Function type, printName: (name: string) => never; // returns unknown
 
-interface Object {key: value arguments};
+-   Aliases(type and interface)
+    interface Object {key: value arguments};
+    Examples:
+    type Person = {name: string; age: number;}
+    interface Person {name: string; age: number;}
+    type X = {a: string; b:number;}
+    type Y = X & {c: string; d:number;} // Y is extended to X
+    interface Person {name: string; age: number;}
+    interface Guy extends Person {profession: string}
+    type X = Person & {a: string; b: number;}
+    interface Person extends X {name: string; age?: number;} // age optional
+
+-   Project Notes
+    ./App.tsx
+    App: React.FC // React Functional Component
+
+./App.css
+.input parent position: relative and child input_submit position: absolute so button is inside the input\_\_box
+
+./model.ts // normal ts file to reuse properties throughout project
+
+./App.tsx
+handleAdd function adds todos to todo list: add to <InputField />; ./InputField.tsx added to interface Props, InputFiled function params
+
+./InputField.tsx
+useRef hook to restore background on submit button click; inputRef.current?.blur();
+
+./TodoList.tsx
+params todos for todo list, and setTodos for deleting and striking
 
 $ npm install react-icons
 
+./SingleTodo.tsx
+<s ... >string</s> strike-through
+edit state tracks it the edit id "on" or "off" <boolean>
+editTodo state holds the value of the todo <string>
+if edit it true display input box, else display todo
+useRef hook used to set focus on edit box input upon submit of edit button
+useEffect hook contains the logic to set useRef focus
+incorporate useReducer into project (./model.ts)
+
+./TodoList.tsx
+"todos" are Active Tasks, and "todos remove" are for Completed Tasks
+
 $ npm i react-beautiful-dnd
 $ npm i @types/react-beautiful-dnd
+
+./App.tsx
+completedTodos, setCompletedTodos state
+send to todos component in return ()
+
+./TodoList.tsx
+list completedTodos and setCompletedTodos in interface
+list completedTodos and setCompletedTodos in function params
+list completedTodos and setCompletedTodos in return of component
+
+./App.tsx
+wrap return (<div> </div>) with <DragDropContext></DragDropContext> element
+
+./TodoList.tsx
+wrap return (for each <div></div>) with <Droppable droppableId="name"></Droppable> element
+
+./SingleTodo.tsx
+wrap return (<form></form>) with <Draggable draggableId={todo.id.toString()} index={index}></Draggable> element
 
 ## \***\*\*\*\*\*\*\*** TODO **\*\***\*\*\***\*\***
 
 1. Fix todo under lapping Completed Task container
 2. Save and restore in localStorage
 3. Make image properly responsive
+4. Convert to Redux state management
+5. Publish project
