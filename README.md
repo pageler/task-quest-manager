@@ -83,7 +83,7 @@ Function type, printName: (name: string) => never; // returns unknown
 ./model.ts // normal ts file to reuse properties throughout project
 
 ./App.tsx
-handleAdd function adds todos to todo list: add to InputField; ./InputField.tsx added to interface Props, InputFiled function params
+handleAdd function adds todos to todo list: add to <InputField />; ./InputField.tsx added to interface Props, InputFiled function params
 
 ./InputField.tsx
 useRef hook to restore background on submit button click; inputRef.current?.blur();
@@ -118,13 +118,13 @@ list completedTodos and setCompletedTodos in function params
 list completedTodos and setCompletedTodos in return of component
 
 ./App.tsx
-wrap return (div) with DragDropContext element
+wrap return (<div> </div>) with <DragDropContext></DragDropContext> element
 
 ./TodoList.tsx
-wrap return (for each div) with Droppable droppableId="name" element
+wrap return (for each <div></div>) with <Droppable droppableId="name"></Droppable> element
 
 ./SingleTodo.tsx
-wrap return (form) with Draggable draggableId={todo.id.toString()} index={index} element
+wrap return (<form></form>) with <Draggable draggableId={todo.id.toString()} index={index}></Draggable> element
 
 ## \***\*\*\*\*\*\*\*** TODO **\*\***\*\*\***\*\***
 
