@@ -8,7 +8,7 @@ export interface Todo {
 
 //type Actions =
 //    | { type: "add"; payload: string }
-//    | { type: "remove"; payload: number }
+//    | { type: "remove"; payload: number }  // id
 //    | { type: "done"; payload: number };
 
 //const TodoReducer = (state: Todo[], action: Actions) => {
